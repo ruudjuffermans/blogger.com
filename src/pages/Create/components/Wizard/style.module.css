@@ -1,0 +1,89 @@
+.body {
+  margin-top: 40px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer {
+  background-color: rgb(221, 221, 221);
+}
+
+.progress__wrap {
+  margin-top: 5%;
+}
+
+.footer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0 !important;
+  min-width: 100px;
+  margin-right: 20px;
+}
+
+.fade {
+  opacity: 1;
+  transition: var(--transition);
+}
+
+.fade--MOUNTED {
+  opacity: 0;
+}
+
+.fade--ENTERING {
+  opacity: 1;
+}
+
+.fade--ENTERED {
+  opacity: 1;
+}
+
+.fade--LEAVING {
+  opacity: 0;
+}
+
+.slide {
+  transition: var(--transition);
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.left--MOUNTED {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.left--ENTERING {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.left--ENTERED {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.left--LEAVING {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.right--MOUNTED {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.right--ENTERING {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.right--ENTERED {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.right--LEAVING {
+  transform: translateX(-100%);
+  opacity: 0;
+}

@@ -1,0 +1,31 @@
+.wrapper {
+  -webkit-clip-path: polygon(0 1%, 64% 0, 40% 100%, 0% 100%);
+  clip-path: polygon(0 1%, 64% 0, 40% 100%, 0% 100%);
+  background: red;
+}
+
+.spotlight__grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  height: 500px;
+}
+
+.pos1 {
+  grid-area: 1 / 1 / 4 / 2;
+  background-color: green;
+}
+.pos2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: red;
+}
+.pos3 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: yellow;
+}
+.pos4 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: purple;
+}

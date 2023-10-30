@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+}
+
+.bar {
+  position: relative;
+  background-color: var(--light-4);
+}
+
+.progress {
+  background: var(--color-primary);
+
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.wrapper svg circle:last-of-type {
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+  transition: all 0.3s ease;
+  stroke: #3498db;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.percentage {
+  font-weight: 200;
+  font-size: 3.5rem;
+}

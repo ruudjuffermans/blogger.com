@@ -1,0 +1,67 @@
+.init__btn,
+.step__btn {
+  transition: all var(--transition);
+  padding-top: 30px;
+  color: #ccc;
+  background-size: 100%;
+  width: 100%;
+  pointer-events: none;
+  font-size: 13px;
+}
+
+.step__desc {
+  white-space: pre-wrap;
+  line-height: 1.3;
+  padding: 0 20px;
+}
+
+.init__btn::before,
+.step__btn::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: "";
+  transform: translateX(-50%);
+  background-color: currentColor;
+  z-index: 3;
+}
+
+.step__btn::after {
+  position: absolute;
+  top: 4px;
+  left: calc(-50% - 10px / 2);
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: currentColor;
+  z-index: 1;
+}
+.step__done {
+  color: #666;
+}
+
+.step__done::before {
+  width: 10px;
+  height: 10px;
+  top: 0px;
+  color: #555;
+}
+.step__active {
+  color: #000;
+}
+.step__active::before {
+  width: 16px;
+  height: 16px;
+  top: -3px;
+  background-color: #333;
+}
+.step__done::after,
+.step__active::after {
+  height: 2px;
+  top: 4px;
+  color: #555;
+}

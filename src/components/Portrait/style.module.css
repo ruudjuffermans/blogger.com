@@ -1,0 +1,11 @@
+.portrait__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portrait {
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+}

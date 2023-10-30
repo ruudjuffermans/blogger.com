@@ -1,0 +1,39 @@
+.count {
+  margin-top: 12px;
+  text-align: right;
+}
+
+.content__box {
+  position: absolute;
+  top: calc(var(--header-height) + 55%);
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 75%;
+}
+
+.content {
+  color: #fff;
+}
+.step {
+  background-color: red;
+
+  transition: background-color var(--transition);
+}
+
+.step--MOUNTED {
+  background-color: rgb(4, 0, 255);
+}
+
+.step--ENTERING {
+  background-color: rgb(255, 0, 255);
+}
+
+.step--ENTERED {
+  background-color: rgb(89, 255, 0);
+}
+
+.step--LEAVING {
+  background-color: rgb(255, 140, 0);
+}

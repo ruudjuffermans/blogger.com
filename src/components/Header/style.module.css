@@ -1,0 +1,33 @@
+:root .header {
+  --header-height: 66px;
+  --header-bg: #ffffff;
+  --header-border: none;
+  --header-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: var(--header-bg);
+  color: #333;
+  border-bottom: 1px solid var(--header-border);
+  box-shadow: var(--shadow-3);
+  height: var(--header-height);
+}
+
+.header__flex {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: smaller;
+}

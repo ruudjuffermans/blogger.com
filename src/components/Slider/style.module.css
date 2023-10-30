@@ -1,0 +1,59 @@
+.profilecard {
+  background: orange;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.portrait {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.preheader {
+}
+
+.subtitle {
+}
+
+.socials {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social__wrap {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.231);
+  border-radius: 50%;
+}
+
+.navigation {
+  position: absolute;
+  right: 0;
+  top: -100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn__prev {
+  background-color: var(--light-8);
+  padding: 0px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.btn__next {
+  background-color: var(--light-8);
+  /* padding: 5px; */
+  border-radius: 50%;
+}

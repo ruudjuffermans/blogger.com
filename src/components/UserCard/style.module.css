@@ -1,0 +1,168 @@
+.usercard {
+  background: linear-gradient(100deg, rgb(42, 42, 42), rgb(34, 34, 34));
+  color: white;
+  padding: 20px;
+}
+
+.right {
+  width: 100%;
+  padding: 10px;
+}
+
+.portrait__box {
+  margin: auto;
+  max-width: clamp(180px, 45vw, 240px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user__name {
+  font-size: 34px;
+  font-weight: 900;
+  color: white;
+}
+
+.user__job {
+  font-size: 14px;
+  color: orange;
+  margin-top: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.user__bio {
+  font-size: 14px;
+  color: rgb(228, 228, 228);
+  max-width: 95%;
+  margin-bottom: 20px;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social__link {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link:not(:first-child) {
+  margin-left: 10px;
+}
+
+.stat {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.stat:not(:first-child) {
+  margin-left: 10px;
+}
+
+.stat__key {
+  font-size: 12px;
+  color: grey;
+  font-weight: 500;
+}
+
+.stat__key::after {
+  content: ": ";
+}
+.stat__val {
+  color: orange;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 0;
+}
+
+@media (min-width: 576px) {
+  .card__bottom {
+    flex-direction: row;
+  }
+  .user__bio {
+    font-size: 16px;
+    max-width: 85%;
+  }
+
+  .user__name {
+    font-size: 40px;
+  }
+
+  .user__job {
+    font-size: 16px;
+  }
+
+  .stat__key {
+    font-size: 14px;
+  }
+
+  .stat__val {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .right {
+    width: unset;
+    margin: 0 2%;
+    /* padding-right: 20px; */
+  }
+  .portrait__box {
+    width: clamp(200px, 22vw, 240px);
+  }
+
+  .user__name {
+    font-size: 50px;
+  }
+
+  .user__job {
+    font-size: 18px;
+  }
+
+  .user__bio {
+    font-size: 17px;
+    max-width: 75%;
+    margin-bottom: 30px;
+  }
+
+  .stat__val {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .user__name {
+    font-size: 60px;
+  }
+
+  .user__job {
+    font-size: 20px;
+  }
+
+  .user__bio {
+    max-width: 75%;
+  }
+
+  .stat__key {
+    font-size: 16px;
+  }
+  .stat__val {
+    font-size: 32px;
+  }
+}
